@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{jorge-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Jorge}{Verastegui}{ \urlstyle{same}
+\href{mailto:jorge@verastegui.net}{jorge@verastegui.net} | +591-70513933 | \href{https://github.com/jorgeverastegui}{github.com/jorgeverastegui}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{San Pablo Catolic University}
+\descript{Diploma in teacher training for higher education}
+\location{2021 | Bolivia, La Paz }
+\sectionsep
+
+\subsection{San Andrés University}
+\descript{Chemical Engineering}
+\location{1993 | Bolivia, La Paz }
+\sectionsep
+
+\subsection{San Andrés University}
+\descript{Msc in Control System Engineering}
+\location{2003 | Bolivia, La Paz}
+Pending thesis 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/jorgeverastegui}{\bf jorgeverastegui} \\
+LinkedIn:// \href{https://www.linkedin.com/in/jorge-verastegui-9352259/}{jorge-verastegui-9352259/}\\
+Twitter://  \href{https://twitter.com/jorge31284084}{\bf @jorge31284084} \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Lenguage  SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Lenguage Skills}
+\descript{English}
+\location{Intermedium}
+\sectionsep
+\descript{Spanish}
+\location{Native}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications}
+\descript{Certified Kubernetes Adminitrator}
+\location{Linux Fundation,2021}
+\sectionsep
+\descript{Certified System Adminitrator}
+\location{Linux Fundation,2016}
+\sectionsep
+\descript{Digium-Certified Asterisk Professional}
+\location{DCAP ,2011 Santiago de Chile}
+\sectionsep
+\descript{Cisco CCNA}
+\location{La Paz, Boliva, 2001}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.63\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{OpenIt}
+\descript{ | Engineering Consultant }
+    \location{Fec. 2021 - Present | La Paz, Bolivia (remote) }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Informix admin support | Zimbra support | Proxmox support
+\end{tightemize}    
+\sectionsep
+
+\runsubsection{AGETIC}
+\descript{ | Chief of Development unit }
+\location{Electronic Government and Information Technologies Agency}
+\location{Aug. 2020 - Jan  2021| La Paz, Bolivia}
+\begin{tightemize}
+\item Agile development management 
+\end{tightemize}    
+\sectionsep
+
+
+\runsubsection{VIRIDIAN}
+\descript{ | Chief Research Officer}
+\location{Nov. 2017 - Apr. 2020 | La Paz, Bolivia}
+\begin{tightemize}
+\item Microservices Architect
+\item Java programming in financial systems
+\item DevOps Engineer    
+\end{tightemize}    
+\sectionsep
+
+\runsubsection{ABC}
+\descript{ | Head of Technology and Information Systems}
+\location{Bolivian highway administrator}
+\location{Mar. 2016 - Sept. 2017 | La Paz, Bolivia}
+\begin{tightemize}
+\item Information Systems Management
+\item Management, design and implementation of Linux Servers
+\item Proxmox administration
+\end{tightemize}    
+\sectionsep
+
+\runsubsection{VELANORMA}
+\descript{ | General Manager}
+\location{Nov. 2011 - Dec. 2016 | La Paz, Bolivia}
+\begin{tightemize}
+\item Application development (Java, AngularJs, Wicket)
+\item Design and implementation of Linux Servers.
+\item Design and implementation of IP telephony solutions
+\end{tightemize}    
+\sectionsep
+
+
+\runsubsection{CETUS-GROUP S.R.L}
+\descript{ | IT project manager}
+\location{Apr. 2011 - Dec. 2015 | La Paz, Bolivia}
+\begin{tightemize}
+\item Design and implementation of Linux Servers.
+\item Design and implementation of IP telephony solutions
+\item Design and implementation of HTTP Servers, DNS, Email.
+\end{tightemize}    
+\sectionsep
+
+
+\runsubsection{Several industrial companies}
+\descript{ | IT professionl }
+\location{Aug. 1996  - Mar. 2011 | La Paz, Bolivia}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical skills}
+\descript{Network Protocols  and common services}
+    \location {20 years - expert}
+\descript{Linux Enviroments }
+    \location{20 years - expert}
+\descript{System Engineering and DevOps }
+    \location{ 3 years - senior}
+\descript{Scrum| Scrum Master | Project Owner }
+    \location{3 years - senior}
+\descript{ Project Manager | Leadership and desing }
+    \location{3 year - senior} 
+\descript{Programming}
+    \location{Java \textbullet{}   Shell \textbullet{}  C \textbullet{} C++
+    \textbullet{} JavaScript\\
+    PostgreSQL \textbullet{} PHP \textbullet{} Mysql \textbullet{} \LaTeX\ }
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
